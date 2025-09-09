@@ -1,0 +1,78 @@
+:root {
+  --background-color: #000;
+  --info-background: rgba(0, 0, 0, 0.6);
+  --info-color: #fff;
+  --slider-width: 80%;
+  /* Replace these URLs with your own timeline and handle images */
+  --timeline-bg: url('images/timeline-placeholder.svg');
+  --handle-img: url('images/handle-placeholder.svg');
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--background-color);
+}
+
+#viewer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#stage-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#slider-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
+  background: var(--info-background);
+}
+
+#stage-info {
+  color: var(--info-color);
+  margin-bottom: 0.25rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#stage-slider {
+  width: var(--slider-width);
+  appearance: none;
+  background: transparent;
+}
+
+#stage-slider::-webkit-slider-runnable-track {
+  height: 24px;
+  background: var(--timeline-bg) no-repeat center/contain;
+}
+
+#stage-slider::-moz-range-track {
+  height: 24px;
+  background: var(--timeline-bg) no-repeat center/contain;
+}
+
+#stage-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: var(--handle-img) no-repeat center/contain;
+  border: none;
+  margin-top: -0.5rem; /* centers thumb on track */
+}
+
+#stage-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background: var(--handle-img) no-repeat center/contain;
+  border: none;
+}

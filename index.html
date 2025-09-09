@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4D Construction Staging Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="viewer">
+    <img id="stage-image" src="" alt="Stage image" />
+    <div id="slider-container">
+      <div id="stage-info">
+        <span id="stage-name"></span> - <span id="stage-date"></span>
+      </div>
+      <input type="range" id="stage-slider" min="0" max="100" step="0.1" />
+    </div>
+  </div>
+  <script src="stages.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
