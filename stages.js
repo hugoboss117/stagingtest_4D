@@ -1,7 +1,7 @@
 export const stages = [
-  { name: 'Empty Lot', date: '2024-01-01', image: 'images/stage0.svg' },
-  { name: 'Excavation', date: '2024-02-15', image: 'images/stage1.svg' },
-  { name: 'Foundation', date: '2024-04-01', image: 'images/stage2.svg' },
+  { name: 'Empty Lot', date: '2024-01-01', image: 'images/stage0.png' },
+  { name: 'Excavation', date: '2024-02-15', image: 'images/stage1.png' },
+  { name: 'Foundation', date: '2024-04-01', image: 'images/stage2.png' },
   { name: 'Framing', date: '2024-06-01', image: 'images/stage3.svg' },
   { name: 'Enclosure', date: '2024-08-01', image: 'images/stage4.svg' },
   { name: 'MEP Rough-In', date: '2024-09-15', image: 'images/stage5.svg' },
