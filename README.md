@@ -5,6 +5,7 @@ This project provides a simple static viewer that simulates a 4D construction ti
 ## Usage
 
 Open `index.html` in any modern web browser. Use the slider at the bottom to move through construction stages. The current stage name and date are displayed above the slider.
+No build step or server is required; all assets are static.
 
 ### Adding or editing stages
 
